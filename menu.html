@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Menü — Mekan Efes | Selçuk</title>
+  <meta name="description" content="Mekan Efes menüsü: kahvaltı, başlangıçlar, salatalar, ana yemekler, burgerler, İtalyan mutfağı, tatlılar ve içecekler." />
+  <!-- Konsept çalışma — yayına alırken "index, follow" yapın -->
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="theme-color" content="#0A2027" />
+  <link rel="canonical" href="https://mekanefes.vercel.app/menu.html" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta property="og:site_name" content="Mekan Efes" />
+  <meta property="og:title" content="Menü — Mekan Efes" />
+  <meta property="og:description" content="Kahvaltıdan kokteyle, Mekan Efes'in güncel menüsü." />
+  <meta property="og:url" content="https://mekanefes.vercel.app/menu.html" />
+  <meta property="og:image" content="https://mekanefes.vercel.app/assets/img/og-kapak.jpg" />
+
+  <link rel="icon" href="assets/logo/amblem-kucuk.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+
+  <link rel="preload" as="font" type="font/woff2" href="assets/fonts/jost-var-latin.woff2" crossorigin />
+  <link rel="preload" as="font" type="font/woff2" href="assets/fonts/cormorant-var-latin.woff2" crossorigin />
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="menu-sayfa">
+  <a class="skip-link" href="#menu-govde">Menüye atla</a>
+
+  <!-- ============================================================
+       MENÜ BAŞLIĞI
+       QR ile gelen ziyaretçi doğrudan buraya düşer; bu yüzden sayfa
+       kendi kendini açıklamalı ve hızlı yüklenmeli.
+       ============================================================ -->
+  <header class="menu-ust">
+    <div class="wrap">
+      <a href="index.html" class="logo" aria-label="Mekan Efes ana sayfa" style="color: var(--pirinc)">
+        <svg class="logo__amblem" viewBox="0 0 100 100" aria-hidden="true"
+             fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M16 86 V50 A34 34 0 0 1 84 50 V86" stroke-width="3.2" opacity="0.55"/>
+          <path d="M11 86 H89" stroke-width="3.2" opacity="0.55"/>
+          <path d="M26 70 V44 L38 61 L50 44 V70" stroke-width="4.2"/>
+          <path d="M60 44 V70 M60 44 H75 M60 57 H71 M60 70 H75" stroke-width="4.2"/>
+        </svg>
+        <span class="logo__yazi">
+          <span class="logo__ad">MEKAN EFES</span>
+          <span class="logo__alt">Bistro &amp; Cafe</span>
+        </span>
+      </a>
+      <h1>Menü</h1>
+      <p>Fiyatlarımıza KDV dâhildir · Her gün 08:30 – 00:00</p>
+    </div>
+  </header>
+
+  <!-- Yapışkan kategori çubuğu — JS aktif kategoriyi işaretler -->
+  <nav class="menu-nav" aria-label="Menü kategorileri">
+    <div class="menu-nav__liste" id="menu-nav">
+      <a href="#kahvalti">Kahvaltı</a>
+      <a href="#baslangic">Başlangıçlar</a>
+      <a href="#salata">Salatalar</a>
+      <a href="#ana">Ana Yemekler</a>
+      <a href="#burger">Burgerler</a>
+      <a href="#italyan">İtalyan</a>
+      <a href="#tatli">Tatlılar</a>
+      <a href="#icecek">İçecekler</a>
+      <a href="#kokteyl">Kokteyller</a>
+    </div>
+  </nav>
+
+  <main class="wrap menu-govde" id="menu-govde">
+
+    <!-- ==================== KAHVALTI ==================== -->
+    <section class="menu-kat" id="kahvalti">
+      <header class="menu-kat__ust">
+        <img class="menu-kat__gorsel" src="assets/img/kat-kahvalti.webp"
+             alt="Avokado, poşe yumurta ve ekşi mayalı ekmekten oluşan kahvaltı tabağı"
+             width="800" height="500" loading="lazy" decoding="async" />
+        <h2 class="menu-kat__ad">Kahvaltı</h2>
+        <p class="menu-kat__not">08:30 – 12:30 arası servis edilir</p>
+      </header>
+      <ul class="menu-liste">
+        <li>
+          <div class="urun__satir">
+            <span class="urun__ad">Serpme Kahvaltı</span>
+            <span class="urun__nokta" aria-hidden="true"></span>
+            <span class="urun__fiyat">1.450 ₺</span>
+          </div>
+          <p class="urun__desc">İki kişilik. Köy peynirleri, zeytin, reçel, bal-kaymak, menemen, sınırsız çay.</p>
+        </li>
+        <li>
+          <div class="urun__satir">
+            <span class="urun__ad">Menemen</span>
+            <span class="urun__nokta" aria-hidden="true"></span>
+            <span class="urun__fiyat">320 ₺</span>
+          </div>
+          <p class="urun__desc">Domates, sivri biber, tereyağı. Sucuklu tercih edilebilir.</p>
+        </li>
+        <li>
+          <div class="urun__satir">
+            <span class="urun__ad">Avokadolu Ekşi Maya</span>
+            <span class="urun__nokta" aria-hidden="true"></span>
+            <span class="urun__fiyat">380 ₺</span>
+          </div>
+          <p class="urun__desc">Poşe yumurta, avokado ezmesi, roka, ekşi mayalı ekmek.</p>
+        </li>
+        <li>
+          <div class="urun__satir">
+            <span class="urun__ad">Omlet</span>
+            <span class="urun__nokta" aria-hidden="true"></span>
+            <span class="urun__fiyat">290 ₺</span>
+          </div>
+          <p class="urun__desc">Kaşarlı, mantarlı veya sebzeli.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ==================== BAŞLANGIÇLAR ==================== -->
+    <section class="menu-kat" id="baslangic">
+      <header class="menu-kat__ust">
+        <h2 class="menu-kat__ad">Başlangıçlar</h2>
+        <p class="menu-kat__not">Paylaşmalık porsiyonlar</p>
+      </header>
+      <ul class="menu-liste">
+        <li>
+          <div class="urun__satir">
+            <span class="urun__ad">Mercimek Çorbası</span>
+            <span class="urun__nokta" aria-hidden="true"></span>
+            <span class="urun__fiyat">180 ₺</span>
+          </div>
+          <p class="urun__desc">Tereyağı ve limon ile.</p>
+        </li>
+        <li>
+          <div class="urun__satir">
+            <span class="urun__ad">Humus</span>
+            <span class="urun__nokta" aria-hidden="true"></span>
+            <span class="urun__fiyat">260 ₺</span>
+          </div>
+          <p class="urun__desc">Tahin, zeytinyağı, közlenmiş biber. <span class="urun__etiket">Vejetaryen</span></p>
+        </li>
+        <li>
+          <div class="urun__satir">
+            <span class="urun__ad">Sigara Böreği</span>
+            <span class="urun__nokta" aria-hidden="true"></span>
+            <span class="urun__fiyat">280 ₺</span>
+          </div>
+          <p class="urun__desc">Beyaz peynir ve maydanoz. 6 adet.</p>
+        </li>
+        <li>
+          <div class="urun__satir">
+            <span class="urun__ad">Kalamar Tava</span>
+            <span class="urun__nokta" aria-hidden="true"></span>
+            <span class="urun__fiyat">520 ₺</span>
+          </div>
+          <p class="urun__desc">Tartar sos ve limon eşliğinde.</p>
+        </li>
+        <li>
+          <div class="urun__satir">
+            <span class="urun__ad">Zeytinyağlı Enginar</span>
+            <span class="urun__nokta" aria-hidden="true"></span>
+            <span class="urun__fiyat">420 ₺</span>
+          </div>
+          <p class="urun__desc">Ege usulü, mevsiminde. <span class="urun__etiket">Vegan</span></p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ==================== SALATALAR ==================== -->
+    <section class="menu-kat" id="salata">
+      <header class="menu-kat__ust">
+        <h2 class="menu-kat__ad">Salatalar</h2>
+      </header>
+      <ul class="menu-liste">
+        <li>
+          <div class="urun__satir">
+            <span class="urun__ad">Sezar Salata</span>
+            <span class="urun__nokta" aria-hidden="true"></span>
+            <span class="urun__fiyat">420 ₺</span>
+          </div>
+          <p class="urun__desc">Izgara tavuk, parmesan, kruton, sezar sos.</p>
+        </li>
+        <li>
+          <div class="urun__satir">
+            <span class="urun__ad">Akdeniz Salata</span>
+            <span class="urun__nokta" aria-hidden="true"></span>
+            <span class="urun__fiyat">380 ₺</span>
+          </div>
+          <p class="urun__desc">Beyaz peynir, zeytin, kekik, nar ekşisi. <span class="urun__etiket">Vejetaryen</span></p>
+        </li>
+        <li>
+          <div class="urun__satir">
+            <span class="urun__ad">Rokalı Bonfile Salata</span>
+            <span class="urun__nokta" aria-hidden="true"></span>
+            <span class="urun__fiyat">620 ₺</span>
+          </div>
+          <p class="urun__desc">Dilimlenmiş bonfile, roka, parmesan, balzamik.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ==================== ANA YEMEKLER ==================== -->
+    <section class="menu-kat" id="ana">
+      <header class="menu-kat__ust">
+        <h2 class="menu-kat__ad">Ana Yemekler</h2>
+        <p class="menu-kat__not">Yanında patates, sebze veya pilav seçebilirsiniz</p>
+      </header>
+      <ul class="menu-liste">
+        <li>
+          <div class="urun__satir">
+            <span class="urun__ad">Mantar Soslu Bonfile</span>
+            <span class="urun__nokta" aria-hidden="true"></span>
+            <span class="urun__fiyat">890 ₺</span>
+          </div>
+          <p class="urun__desc">Dinlendirilmiş bonfile, kremalı mantar sosu, tereyağlı sebze. <span class="urun__etiket">İmza</span></p>
+        </li>
+        <li>
+          <div class="urun__satir">
+            <span class="urun__ad">Karışık Izgara</span>
+            <span class="urun__nokta" aria-hidden="true"></span>
+            <span class="urun__fiyat">950 ₺</span>
+          </div>
+          <p class="urun__desc">Kuzu şiş, tavuk şiş, köfte ve pirzola. İki kişilik. <span class="urun__etiket">İmza</span></p>
+        </li>
+        <li>
+          <div class="urun__satir">
+            <span class="urun__ad">Kremalı Çıtır Tavuk</span>
+            <span class="urun__nokta" aria-hidden="true"></span>
+            <span class="urun__fiyat">620 ₺</span>
+          </div>
+          <p class="urun__desc">Çıtır tavuk göğsü, mantar sosu, patates püresi.</p>
+        </li>
+        <li>
+          <div class="urun__satir">
+            <span class="urun__ad">Izgara Köfte</span>
+            <span class="urun__nokta" aria-hidden="true"></span>
+            <span class="urun__fiyat">540 ₺</span>
+          </div>
+          <p class="urun__desc">El yapımı dana köfte, közlenmiş biber ve domates.</p>
+        </li>
+        <li>
+          <div class="urun__satir">
+            <span class="urun__ad">Izgara Somon</span>
+            <span class="urun__nokta" aria-hidden="true"></span>
+            <span class="urun__fiyat">780 ₺</span>
+          </div>
+          <p class="urun__desc">Limon-tereyağı sos, buharda sebze.</p>
+        </li>
+        <li>
+          <div class="urun__satir">
+            <span class="urun__ad">Tavuk Şiş</span>
+            <span class="urun__nokta" aria-hidden="true"></span>
+            <span class="urun__fiyat">480 ₺</span>
+          </div>
+          <p class="urun__desc">Marine edilmiş tavuk, közde sebze.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ==================== BURGERLER ==================== -->
+    <section class="menu-kat" id="burger">
+      <header class="menu-kat__ust">
+        <h2 class="menu-kat__ad">Burgerler</h2>
+        <p class="menu-kat__not">Hepsi el yapımı köfte ve ev yapımı ekmekle</p>
+      </header>
+      <ul class="menu-liste">
+        <li>
+          <div class="urun__satir">
+            <span class="urun__ad">Sultan Burger</span>
+            <span class="urun__nokta" aria-hidden="true"></span>
+            <span class="urun__fiyat">620 ₺</span>
+          </div>
+          <p class="urun__desc">180 gr dana köfte, kaşar, karamelize soğan, özel sos. <span class="urun__etiket">İmza</span></p>
+        </li>
+        <li>
+          <div class="urun__satir">
+            <span class="urun__ad">Klasik Cheeseburger</span>
+            <span class="urun__nokta" aria-hidden="true"></span>
+            <span class="urun__fiyat">520 ₺</span>
+          </div>
+          <p class="urun__desc">Dana köfte, cheddar, marul, domates, turşu.</p>
+        </li>
+        <li>
+          <div class="urun__satir">
+            <span class="urun__ad">Tavuk Burger</span>
+            <span class="urun__nokta" aria-hidden="true"></span>
+            <span class="urun__fiyat">480 ₺</span>
+          </div>
+          <p class="urun__desc">Çıtır tavuk, ranch sos, coleslaw.</p>
+        </li>
+        <li>
+          <div class="urun__satir">
+            <span class="urun__ad">Tavuk Dürüm</span>
+            <span class="urun__nokta" aria-hidden="true"></span>
+            <span class="urun__fiyat">420 ₺</span>
+          </div>
+          <p class="urun__desc">Izgara tavuk, közlenmiş biber, sarımsaklı yoğurt.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ==================== İTALYAN ==================== -->
+    <section class="menu-kat" id="italyan">
+      <header class="menu-kat__ust">
+        <img class="menu-kat__gorsel" src="assets/img/kat-italyan.webp"
+             alt="Pizza, penne makarna ve caprese salatasının bir arada olduğu masa"
+             width="800" height="500" loading="lazy" decoding="async" />
+        <h2 class="menu-kat__ad">İtalyan</h2>
+        <p class="menu-kat__not">Taş fırında pişen ince hamur pizzalar</p>
+      </header>
+      <ul class="menu-liste">
+        <li>
+          <div class="urun__satir">
+            <span class="urun__ad">Margherita</span>
+            <span class="urun__nokta" aria-hidden="true"></span>
+            <span class="urun__fiyat">420 ₺</span>
+          </div>
+          <p class="urun__desc">Domates sos, mozzarella, taze fesleğen. <span class="urun__etiket">Vejetaryen</span></p>
+        </li>
+        <li>
+          <div class="urun__satir">
+            <span class="urun__ad">Füme Etli Pizza</span>
+            <span class="urun__nokta" aria-hidden="true"></span>
+            <span class="urun__fiyat">560 ₺</span>
+          </div>
+          <p class="urun__desc">Füme dana, mantar, mozzarella, roka.</p>
+        </li>
+        <li>
+          <div class="urun__satir">
+            <span class="urun__ad">Penne Arrabbiata</span>
+            <span class="urun__nokta" aria-hidden="true"></span>
+            <span class="urun__fiyat">440 ₺</span>
+          </div>
+          <p class="urun__desc">Acılı domates sos, sarımsak, parmesan. <span class="urun__etiket">Vejetaryen</span></p>
+        </li>
+        <li>
+          <div class="urun__satir">
+            <span class="urun__ad">Fettuccine Alfredo</span>
+            <span class="urun__nokta" aria-hidden="true"></span>
+            <span class="urun__fiyat">480 ₺</span>
+          </div>
+          <p class="urun__desc">Kremalı parmesan sos, tavuk ilavesi mümkün.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ==================== TATLILAR ==================== -->
+    <section class="menu-kat" id="tatli">
+      <header class="menu-kat__ust">
+        <img class="menu-kat__gorsel" src="assets/img/kat-tatli.webp"
+             alt="Kaymak ve nane ile servis edilen taze meyve tabağı"
+             width="800" height="500" loading="lazy" decoding="async" />
+        <h2 class="menu-kat__ad">Tatlılar</h2>
+      </header>
+      <ul class="menu-liste">
+        <li>
+          <div class="urun__satir">
+            <span class="urun__ad">Künefe</span>
+            <span class="urun__nokta" aria-hidden="true"></span>
+            <span class="urun__fiyat">340 ₺</span>
+          </div>
+          <p class="urun__desc">Antep fıstığı ve kaymak ile. Sipariş üzerine hazırlanır.</p>
+        </li>
+        <li>
+          <div class="urun__satir">
+            <span class="urun__ad">Çikolatalı Sufle</span>
+            <span class="urun__nokta" aria-hidden="true"></span>
+            <span class="urun__fiyat">300 ₺</span>
+          </div>
+          <p class="urun__desc">Akışkan çikolata, vanilyalı dondurma.</p>
+        </li>
+        <li>
+          <div class="urun__satir">
+            <span class="urun__ad">Mevsim Meyve Tabağı</span>
+            <span class="urun__nokta" aria-hidden="true"></span>
+            <span class="urun__fiyat">320 ₺</span>
+          </div>
+          <p class="urun__desc">Taze meyveler ve kaymak. <span class="urun__etiket">Vejetaryen</span></p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ==================== İÇECEKLER ==================== -->
+    <section class="menu-kat" id="icecek">
+      <header class="menu-kat__ust">
+        <h2 class="menu-kat__ad">İçecekler</h2>
+      </header>
+      <ul class="menu-liste">
+        <li>
+          <div class="urun__satir">
+            <span class="urun__ad">Türk Kahvesi</span>
+            <span class="urun__nokta" aria-hidden="true"></span>
+            <span class="urun__fiyat">150 ₺</span>
+          </div>
+        </li>
+        <li>
+          <div class="urun__satir">
+            <span class="urun__ad">Latte / Cappuccino</span>
+            <span class="urun__nokta" aria-hidden="true"></span>
+            <span class="urun__fiyat">180 ₺</span>
+          </div>
+        </li>
+        <li>
+          <div class="urun__satir">
+            <span class="urun__ad">Taze Sıkılmış Portakal Suyu</span>
+            <span class="urun__nokta" aria-hidden="true"></span>
+            <span class="urun__fiyat">200 ₺</span>
+          </div>
+        </li>
+        <li>
+          <div class="urun__satir">
+            <span class="urun__ad">Ayran</span>
+            <span class="urun__nokta" aria-hidden="true"></span>
+            <span class="urun__fiyat">90 ₺</span>
+          </div>
+        </li>
+        <li>
+          <div class="urun__satir">
+            <span class="urun__ad">Çay</span>
+            <span class="urun__nokta" aria-hidden="true"></span>
+            <span class="urun__fiyat">60 ₺</span>
+          </div>
+        </li>
+        <li>
+          <div class="urun__satir">
+            <span class="urun__ad">Limonata</span>
+            <span class="urun__nokta" aria-hidden="true"></span>
+            <span class="urun__fiyat">170 ₺</span>
+          </div>
+          <p class="urun__desc">Ev yapımı, naneli.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ==================== KOKTEYLLER ==================== -->
+    <section class="menu-kat" id="kokteyl">
+      <header class="menu-kat__ust">
+        <img class="menu-kat__gorsel" src="assets/img/kat-kokteyl.webp"
+             alt="Koyu mavi kadife arka plan önünde, mermer masada duran martini kadehi"
+             width="800" height="500" loading="lazy" decoding="async" />
+        <h2 class="menu-kat__ad">Kokteyller</h2>
+        <p class="menu-kat__not">18:00'den sonra · Alkollü içecek servisi 18 yaş altına yapılmaz</p>
+      </header>
+      <ul class="menu-liste">
+        <li>
+          <div class="urun__satir">
+            <span class="urun__ad">Klasik Martini</span>
+            <span class="urun__nokta" aria-hidden="true"></span>
+            <span class="urun__fiyat">520 ₺</span>
+          </div>
+        </li>
+        <li>
+          <div class="urun__satir">
+            <span class="urun__ad">Mojito</span>
+            <span class="urun__nokta" aria-hidden="true"></span>
+            <span class="urun__fiyat">480 ₺</span>
+          </div>
+        </li>
+        <li>
+          <div class="urun__satir">
+            <span class="urun__ad">Aperol Spritz</span>
+            <span class="urun__nokta" aria-hidden="true"></span>
+            <span class="urun__fiyat">550 ₺</span>
+          </div>
+        </li>
+        <li>
+          <div class="urun__satir">
+            <span class="urun__ad">Efes Sunset</span>
+            <span class="urun__nokta" aria-hidden="true"></span>
+            <span class="urun__fiyat">560 ₺</span>
+          </div>
+          <p class="urun__desc">Şefin imzası: nar, portakal ve taze nane.</p>
+        </li>
+        <li>
+          <div class="urun__satir">
+            <span class="urun__ad">Alkolsüz Kokteyller</span>
+            <span class="urun__nokta" aria-hidden="true"></span>
+            <span class="urun__fiyat">320 ₺</span>
+          </div>
+          <p class="urun__desc">Virgin mojito, meyveli soda.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Menü altı yasal ve bilgilendirme notları -->
+    <div class="menu-alt">
+      <p>
+        <strong>Alerjen bilgisi.</strong> Ürünlerimiz gluten, süt, yumurta, susam,
+        sert kabuklu meyve ve balık içerebilecek ortak bir mutfakta hazırlanır.
+        Çapraz bulaşma ihtimali nedeniyle gıda alerjiniz varsa lütfen sipariş
+        öncesinde servis personelimize bilgi veriniz.
+      </p>
+      <p>
+        <strong>Fiyatlar.</strong> Tüm fiyatlara KDV dâhildir. Menü ve fiyatlar
+        mevsime göre değişebilir; geçerli fiyat işletmede uygulanandır.
+        Görseller temsilîdir.
+      </p>
+      <p>
+        <strong>Alkol servisi.</strong> Alkollü içecekler 18 yaşından küçüklere
+        servis edilmez.
+      </p>
+    </div>
+  </main>
+
+  <!-- Menü sayfası alt eylem çubuğu — QR'dan gelen misafir için kısayollar -->
+  <div class="menu-eylem">
+    <a class="btn btn--cizgi" href="index.html">Web sitesi</a>
+    <a class="btn btn--birincil"
+       href="https://wa.me/905058962582?text=Merhaba%2C%20rezervasyon%20yapt%C4%B1rmak%20istiyorum."
+       target="_blank" rel="noopener">Rezervasyon</a>
+  </div>
+
+  <footer class="site-footer">
+    <div class="wrap footer__alt">
+      <p>&copy; <span id="yil">2026</span> Mekan Efes</p>
+      <p>
+        <a href="kvkk-aydinlatma-metni.html">KVKK</a> ·
+        <a href="gizlilik-politikasi.html">Gizlilik</a> ·
+        <a href="cerez-politikasi.html">Çerezler</a> ·
+        <a href="kullanim-kosullari.html">Kullanım Koşulları</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

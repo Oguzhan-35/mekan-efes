@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Mekan Efes amblemi">
+  <title>Mekan Efes — ME monogramı</title>
+  <!--
+    AMBLEM / MONOGRAM  (ana kullanım — 32px ve üzeri)
+    Efes'in antik kemer siluetinin içine yerleştirilmiş "ME" monogramı.
+    Harfler yazı tipiyle değil çizilmiş yollarla (path) oluşturulmuştur;
+    böylece font yüklenmese de her ortamda birebir aynı görünür.
+    Renk currentColor'dan gelir: tek dosya hem açık hem koyu zeminde çalışır.
+    Daha küçük boyutlar için amblem-kucuk.svg kullanın.
+  -->
+  <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Kemer: iki ayak + yarım daire -->
+    <path d="M16 86 V50 A34 34 0 0 1 84 50 V86" stroke-width="3.2" opacity="0.55"/>
+    <!-- Taban / kaide -->
+    <path d="M11 86 H89" stroke-width="3.2" opacity="0.55"/>
+
+    <!-- M harfi -->
+    <path d="M26 70 V44 L38 61 L50 44 V70" stroke-width="4.2"/>
+    <!-- E harfi -->
+    <path d="M60 44 V70 M60 44 H75 M60 57 H71 M60 70 H75" stroke-width="4.2"/>
+  </g>
+</svg>

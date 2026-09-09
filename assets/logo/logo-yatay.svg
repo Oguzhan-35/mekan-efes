@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 110" role="img" aria-label="Mekan Efes — Bistro &amp; Cafe">
+  <title>Mekan Efes — yatay logo kilidi</title>
+  <!--
+    YATAY LOGO KİLİDİ  (kartvizit, tabela, e-posta imzası)
+
+    NOT: Buradaki yazı Cormorant Garamond ve Jost yazı tipleriyle
+    kurulmuştur. Bu dosya bir tasarım programında (Illustrator, Figma,
+    Inkscape) açılacaksa önce bu iki fontu sisteminize kurun; baskıya
+    göndermeden önce yazıyı "outline / eğriye çevir" yapın.
+    Fontu olmayan ortamlarda serif/sans-serif yedeğine düşer.
+  -->
+  <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M14 84 V56 A26 26 0 0 1 66 56 V84" stroke-width="2.6" opacity="0.55"/>
+    <path d="M10 84 H70" stroke-width="2.6" opacity="0.55"/>
+    <path d="M22 72 V52 L31 65 L40 52 V72" stroke-width="3.2"/>
+    <path d="M48 52 V72 M48 52 H59 M48 62 H56 M48 72 H59" stroke-width="3.2"/>
+  </g>
+
+  <text x="92" y="58"
+        font-family="'Cormorant Garamond', Georgia, 'Times New Roman', serif"
+        font-size="38" font-weight="600" letter-spacing="4.5"
+        fill="currentColor">MEKAN EFES</text>
+
+  <line x1="93" y1="70" x2="352" y2="70" stroke="currentColor" stroke-width="1" opacity="0.35"/>
+
+  <text x="92" y="88"
+        font-family="Jost, system-ui, sans-serif"
+        font-size="12" font-weight="500" letter-spacing="4.2"
+        fill="currentColor" opacity="0.75">BİSTRO &amp; CAFE · SELÇUK</text>
+</svg>

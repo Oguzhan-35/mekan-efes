@@ -1,0 +1,19 @@
+# İşletim sistemi
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editör
+.vscode/
+.idea/
+*.swp
+
+# Vercel
+.vercel/
+
+# Python
+__pycache__/
+*.pyc
+
+# Yerel önizleme dosyaları
+_*.html

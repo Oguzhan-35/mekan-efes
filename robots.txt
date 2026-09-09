@@ -1,0 +1,16 @@
+# Mekan Efes — robots.txt
+#
+# KONSEPT ÇALIŞMA: Bu site restorana sunulmak üzere hazırlanmış bir
+# tasarım önerisidir. İşletmenin kendi dijital varlıklarıyla arama
+# sonuçlarında yarışmaması için tamamen indekslemeye kapalıdır.
+#
+# YAYINA ALIRKEN: aşağıdaki bloğu silin ve alttaki yorumlu bloğu açın.
+
+User-agent: *
+Disallow: /
+
+# ---- Yayına alındığında bu blok kullanılacak ----
+# User-agent: *
+# Allow: /
+#
+# Sitemap: https://mekanefes.com.tr/sitemap.xml

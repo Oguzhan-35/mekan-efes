@@ -1,0 +1,80 @@
+[
+  {
+    "dosya": "assets/img/hero-900.webp",
+    "unsplash_id": "photo-1767878032664-cd1d61f0e076",
+    "kaynak": "https://unsplash.com/photos/photo-1767878032664-cd1d61f0e076",
+    "boyut_bayt": 203736
+  },
+  {
+    "dosya": "assets/img/hero-600.webp",
+    "unsplash_id": "photo-1767878032664-cd1d61f0e076",
+    "kaynak": "https://unsplash.com/photos/photo-1767878032664-cd1d61f0e076",
+    "boyut_bayt": 108732
+  },
+  {
+    "dosya": "assets/img/imza-bonfile.webp",
+    "unsplash_id": "photo-1762631884998-05cb22996fb2",
+    "kaynak": "https://unsplash.com/photos/photo-1762631884998-05cb22996fb2",
+    "boyut_bayt": 69370
+  },
+  {
+    "dosya": "assets/img/imza-burger.webp",
+    "unsplash_id": "photo-1762922425249-144c3bb9167e",
+    "kaynak": "https://unsplash.com/photos/photo-1762922425249-144c3bb9167e",
+    "boyut_bayt": 74080
+  },
+  {
+    "dosya": "assets/img/imza-izgara.webp",
+    "unsplash_id": "photo-1771285119408-04cca3b35036",
+    "kaynak": "https://unsplash.com/photos/photo-1771285119408-04cca3b35036",
+    "boyut_bayt": 89936
+  },
+  {
+    "dosya": "assets/img/imza-tavuk.webp",
+    "unsplash_id": "photo-1788462612914-44793f2980f2",
+    "kaynak": "https://unsplash.com/photos/photo-1788462612914-44793f2980f2",
+    "boyut_bayt": 81816
+  },
+  {
+    "dosya": "assets/img/kat-kahvalti.webp",
+    "unsplash_id": "photo-1513442542250-854d436a73f2",
+    "kaynak": "https://unsplash.com/photos/photo-1513442542250-854d436a73f2",
+    "boyut_bayt": 145034
+  },
+  {
+    "dosya": "assets/img/kat-italyan.webp",
+    "unsplash_id": "photo-1770678724756-dc8e5123305b",
+    "kaynak": "https://unsplash.com/photos/photo-1770678724756-dc8e5123305b",
+    "boyut_bayt": 161478
+  },
+  {
+    "dosya": "assets/img/kat-tatli.webp",
+    "unsplash_id": "photo-1631718051263-c567dca19362",
+    "kaynak": "https://unsplash.com/photos/photo-1631718051263-c567dca19362",
+    "boyut_bayt": 76204
+  },
+  {
+    "dosya": "assets/img/kat-kokteyl.webp",
+    "unsplash_id": "photo-1638884896143-f1b2501e9a61",
+    "kaynak": "https://unsplash.com/photos/photo-1638884896143-f1b2501e9a61",
+    "boyut_bayt": 17588
+  },
+  {
+    "dosya": "assets/img/mekan-ic.webp",
+    "unsplash_id": "photo-1776775451865-384d785eb96d",
+    "kaynak": "https://unsplash.com/photos/photo-1776775451865-384d785eb96d",
+    "boyut_bayt": 85694
+  },
+  {
+    "dosya": "assets/img/mekan-masa.webp",
+    "unsplash_id": "photo-1762806883627-4bcbfad98a2c",
+    "kaynak": "https://unsplash.com/photos/photo-1762806883627-4bcbfad98a2c",
+    "boyut_bayt": 52102
+  },
+  {
+    "dosya": "assets/img/mekan-teras.webp",
+    "unsplash_id": "photo-1777370537280-94e8796c243a",
+    "kaynak": "https://unsplash.com/photos/photo-1777370537280-94e8796c243a",
+    "boyut_bayt": 29702
+  }
+]

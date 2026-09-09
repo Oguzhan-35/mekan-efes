@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ============================================================
+       SEO / paylasim meta etiketleri
+       DEĞİŞTİR: alan adi kesinlestiginde canonical, og:url, og:image ve
+       asagidaki JSON-LD icindeki adresleri guncelleyin.
+       ============================================================ -->
+  <title>Mekan Efes — Selçuk'ta Bistro &amp; Cafe</title>
+  <meta name="description" content="Selçuk merkezde bistro ve cafe. Mantar soslu bonfile, Sultan Burger, karışık ızgara ve kokteyller. Gölgeli teras, WhatsApp'tan rezervasyon." />
+  <meta name="keywords" content="Selçuk restoran, Efes restoran, Selçuk bistro, Selçuk steak, Selçuk burger, Selçuk kahvaltı, İzmir Selçuk yemek" />
+  <meta name="author" content="Mekan Efes" />
+
+  <!-- ============================================================
+       KONSEPT ÇALIŞMA — arama motorlarina kapali.
+       Bu site restorana sunulmak uzere hazirlanmis bir tasarim
+       onerisidir. Isletmenin kendi dijital varliklarıyla arama
+       sonuclarinda yarismamasi icin indekslenmesi engellenmistir.
+       YAYINA ALIRKEN: asagidaki robots satirini
+       content="index, follow, max-image-preview:large" yapin ve
+       sayfa sonundaki .konsept rozetini kaldirin.
+       ============================================================ -->
+  <meta name="robots" content="noindex, nofollow" />
+
+  <meta name="theme-color" content="#FBF8F2" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0A2027" media="(prefers-color-scheme: dark)" />
+  <link rel="canonical" href="https://mekanefes.vercel.app/" />
+  <meta name="geo.region" content="TR-35" />
+  <meta name="geo.placename" content="Selçuk, İzmir" />
+
+  <meta property="og:type" content="restaurant" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta property="og:site_name" content="Mekan Efes" />
+  <meta property="og:title" content="Mekan Efes — Selçuk'ta Bistro &amp; Cafe" />
+  <meta property="og:description" content="Gölgeli terasta sakin bir sofra. Mantar soslu bonfile, Sultan Burger ve kokteyller." />
+  <meta property="og:url" content="https://mekanefes.vercel.app/" />
+  <meta property="og:image" content="https://mekanefes.vercel.app/assets/img/og-kapak.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Mantar soslu bonfile tabağı" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mekan Efes — Selçuk'ta Bistro &amp; Cafe" />
+  <meta name="twitter:description" content="Gölgeli terasta sakin bir sofra. Selçuk merkezde bistro ve cafe." />
+  <meta name="twitter:image" content="https://mekanefes.vercel.app/assets/img/og-kapak.jpg" />
+
+  <link rel="icon" href="assets/logo/amblem-kucuk.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+
+  <!-- ============================================================
+       Fontlar kendi sunucumuzdan servis edilir (assets/fonts).
+       Google Fonts'a baglanti kurulmaz: ziyaretcinin IP adresi ucuncu
+       tarafa aktarilmaz (KVKK / GDPR uyumu).
+       ============================================================ -->
+  <link rel="preload" as="font" type="font/woff2" href="assets/fonts/jost-var-latin.woff2" crossorigin />
+  <link rel="preload" as="font" type="font/woff2" href="assets/fonts/cormorant-var-latin.woff2" crossorigin />
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="preload" as="image" fetchpriority="high"
+        href="assets/img/hero-600.webp"
+        imagesrcset="assets/img/hero-600.webp 600w, assets/img/hero-900.webp 900w"
+        imagesizes="(min-width: 940px) 45vw, 100vw" />
+
+  <!-- ============================================================
+       Yapisal veri (schema.org)
+       DEĞİŞTİR: menu fiyatlari ve "geo" koordinatlari. Koordinat icin
+       Google Haritalar'da isletmeye sag tiklayip enlem/boylami kopyalayin.
+       ============================================================ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Mekan Efes",
+    "alternateName": "Mekan Efes Restaurant",
+    "description": "Selçuk merkezde bistro ve cafe. Et yemekleri, burger, İtalyan mutfağı, kahvaltı ve kokteyl.",
+    "servesCuisine": ["Bistro", "Türk Mutfağı", "İtalyan", "Uluslararası"],
+    "priceRange": "₺₺₺",
+    "image": "https://mekanefes.vercel.app/assets/img/og-kapak.jpg",
+    "url": "https://mekanefes.vercel.app/",
+    "menu": "https://mekanefes.vercel.app/menu.html",
+    "telephone": "+90 505 896 25 82",
+    "acceptsReservations": "True",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Atatürk Mahallesi, 1055. Sokak No: 4",
+      "addressLocality": "Selçuk",
+      "addressRegion": "İzmir",
+      "postalCode": "35920",
+      "addressCountry": "TR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "37.9519",
+      "longitude": "27.3689"
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "08:30", "closes": "00:00"
+    }],
+    "amenityFeature": [
+      { "@type": "LocationFeatureSpecification", "name": "Açık hava oturma alanı", "value": true }
+    ],
+    "sameAs": ["https://www.instagram.com/mekanefes/"]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#imza">İçeriğe atla</a>
+
+  <!-- ============================================================
+       ÜST BAR
+       ============================================================ -->
+  <header class="site-header" id="header">
+    <div class="wrap header__inner">
+      <a href="#ust" class="logo" aria-label="Mekan Efes ana sayfa">
+        <svg class="logo__amblem" viewBox="0 0 100 100" aria-hidden="true"
+             fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M16 86 V50 A34 34 0 0 1 84 50 V86" stroke-width="3.2" opacity="0.55"/>
+          <path d="M11 86 H89" stroke-width="3.2" opacity="0.55"/>
+          <path d="M26 70 V44 L38 61 L50 44 V70" stroke-width="4.2"/>
+          <path d="M60 44 V70 M60 44 H75 M60 57 H71 M60 70 H75" stroke-width="4.2"/>
+        </svg>
+        <span class="logo__yazi">
+          <span class="logo__ad">MEKAN EFES</span>
+          <span class="logo__alt">Bistro &amp; Cafe</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Ana menü">
+        <ul class="nav__list">
+          <li><a href="menu.html" class="nav__link">Menü</a></li>
+          <li><a href="#imza" class="nav__link">İmza Lezzetler</a></li>
+          <li><a href="#mekan" class="nav__link">Mekân</a></li>
+          <li><a href="#iletisim" class="nav__link">İletişim</a></li>
+        </ul>
+      </nav>
+
+      <!-- DEĞİŞTİR: WhatsApp numarasi (isletmenin gercek numarasi) -->
+      <a class="btn btn--birincil header__cta"
+         href="https://wa.me/905058962582?text=Merhaba%2C%20rezervasyon%20yapt%C4%B1rmak%20istiyorum."
+         target="_blank" rel="noopener">Rezervasyon</a>
+
+      <button class="burger" id="burger" aria-label="Menüyü aç" aria-expanded="false" aria-controls="mobile-nav">
+        <span class="burger__bar"></span>
+        <span class="burger__bar"></span>
+        <span class="burger__bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobil menü -->
+  <div class="mobile-nav" id="mobile-nav" hidden>
+    <nav aria-label="Mobil menü">
+      <ul class="mobile-nav__list">
+        <li><a href="menu.html"><span class="mobile-nav__num">01</span> Menü</a></li>
+        <li><a href="#imza"><span class="mobile-nav__num">02</span> İmza Lezzetler</a></li>
+        <li><a href="#mekan"><span class="mobile-nav__num">03</span> Mekân</a></li>
+        <li><a href="#iletisim"><span class="mobile-nav__num">04</span> İletişim</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-nav__foot">
+      <a class="btn btn--pirinc btn--blok"
+         href="https://wa.me/905058962582?text=Merhaba%2C%20rezervasyon%20yapt%C4%B1rmak%20istiyorum."
+         target="_blank" rel="noopener">WhatsApp'tan Rezervasyon</a>
+      <a class="btn btn--cizgi-acik btn--blok" href="tel:+905058962582">0505 896 25 82</a>
+      <p class="mobile-nav__meta">Atatürk Mah. 1055. Sk. No:4 · Selçuk<br />Her gün 08:30 – 00:00</p>
+    </div>
+  </div>
+
+  <main id="ust">
+
+    <!-- ==========================================================
+         HERO — ikiye bölünmüş düzen
+         ========================================================== -->
+    <section class="hero">
+      <div class="wrap hero__grid">
+        <div class="hero__text-alan">
+          <p class="eyebrow">Bistro &amp; Cafe · Selçuk</p>
+          <h1 class="hero__title">Gölgeli terasta,<br /><em>sakin bir sofra</em></h1>
+          <p class="hero__text">
+            Efes'i gezdiniz, güneş tepede. Meydanın hemen yanında, asmaların
+            altında serin bir masa sizi bekliyor. Sabah kahvaltıdan gece
+            kokteyline kadar aynı özenle.
+          </p>
+
+          <div class="hero__actions">
+            <a href="menu.html" class="btn btn--birincil btn--lg">Menüyü Gör</a>
+            <a href="https://wa.me/905058962582?text=Merhaba%2C%20rezervasyon%20yapt%C4%B1rmak%20istiyorum."
+               class="btn btn--cizgi btn--lg" target="_blank" rel="noopener">
+              WhatsApp'tan Rezervasyon
+            </a>
+          </div>
+
+          <!-- Google puanı — yalnızca toplu değerlendirme gösterilir,
+               yorum metinleri kopyalanmaz (telif ve KVKK). -->
+          <a class="puan" href="https://www.google.com/maps/search/?api=1&query=Mekan+Efes+Restaurant+Sel%C3%A7uk"
+             target="_blank" rel="noopener">
+            <span class="puan__yildiz" aria-hidden="true">★★★★★</span>
+            <span class="puan__metin"><b>4,4 / 5</b> · Google'da 522 değerlendirme</span>
+          </a>
+        </div>
+
+        <figure class="hero__media">
+          <img src="assets/img/hero-600.webp"
+               srcset="assets/img/hero-600.webp 600w, assets/img/hero-900.webp 900w"
+               sizes="(min-width: 940px) 45vw, 100vw"
+               alt="Ahşap masaların ve hasır sarkıt aydınlatmaların olduğu, akşam güneşiyle aydınlanan gölgeli restoran terası"
+               width="900" height="1200" fetchpriority="high" decoding="async" />
+          <figcaption class="hero__rozet">
+            <span class="nokta" id="durum-nokta" aria-hidden="true"></span>
+            <span id="durum-metin">Çalışma saatleri kontrol ediliyor…</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         İMZA LEZZETLER
+         ========================================================== -->
+    <section class="section" id="imza">
+      <div class="wrap">
+        <header class="section__head section__head--orta reveal">
+          <p class="eyebrow">Masaların çoğundan eksik olmayan</p>
+          <hr class="rule rule--orta" />
+          <h2 class="section__title">İmza lezzetlerimiz</h2>
+          <p class="section__lead">
+            Menünün tamamı QR kodda; burada en çok istenen dördünü bıraktık.
+          </p>
+        </header>
+
+        <ul class="imza-grid">
+          <li class="imza reveal">
+            <div class="imza__media">
+              <img src="assets/img/imza-bonfile.webp"
+                   alt="Mantar ve sotelenmiş sebzelerle servis edilen bonfile"
+                   width="800" height="600" loading="lazy" decoding="async" />
+            </div>
+            <div class="imza__body">
+              <h3 class="imza__ad">Mantar Soslu Bonfile</h3>
+              <p class="imza__desc">Dinlendirilmiş bonfile, kremalı mantar sosu, tereyağlı sebze.</p>
+              <span class="imza__fiyat">890 ₺</span>
+            </div>
+          </li>
+
+          <li class="imza reveal">
+            <div class="imza__media">
+              <img src="assets/img/imza-burger.webp"
+                   alt="Bistro tabağında elde hazırlanmış burger ve patates kızartması"
+                   width="800" height="600" loading="lazy" decoding="async" />
+            </div>
+            <div class="imza__body">
+              <h3 class="imza__ad">Sultan Burger</h3>
+              <p class="imza__desc">180 gr dana köfte, kaşar, karamelize soğan, özel sos.</p>
+              <span class="imza__fiyat">620 ₺</span>
+            </div>
+          </li>
+
+          <li class="imza reveal">
+            <div class="imza__media">
+              <img src="assets/img/imza-izgara.webp"
+                   alt="Kuzu, tavuk ve köfteden oluşan karışık ızgara tabağı"
+                   width="800" height="600" loading="lazy" decoding="async" />
+            </div>
+            <div class="imza__body">
+              <h3 class="imza__ad">Karışık Izgara</h3>
+              <p class="imza__desc">Kuzu şiş, tavuk şiş, köfte ve pirzola; iki kişilik.</p>
+              <span class="imza__fiyat">950 ₺</span>
+            </div>
+          </li>
+
+          <li class="imza reveal">
+            <div class="imza__media">
+              <img src="assets/img/imza-tavuk.webp"
+                   alt="Kremalı mantar sosu ve patates püresiyle servis edilen tavuk göğsü"
+                   width="800" height="600" loading="lazy" decoding="async" />
+            </div>
+            <div class="imza__body">
+              <h3 class="imza__ad">Kremalı Çıtır Tavuk</h3>
+              <p class="imza__desc">Çıtır tavuk göğsü, mantar sosu, patates püresi.</p>
+              <span class="imza__fiyat">620 ₺</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         MEKÂN
+         ========================================================== -->
+    <section class="section mekan" id="mekan">
+      <div class="wrap mekan__grid">
+        <div class="mekan__text reveal">
+          <p class="eyebrow eyebrow--koyu">Mekân</p>
+          <hr class="rule" />
+          <h2 class="section__title">Antik kentin gölgesinde</h2>
+          <p>
+            Selçuk'un merkezinde, Efes Antik Kenti'ne birkaç dakika mesafedeyiz.
+            Gündüz turdan dönenlerin serinlediği, akşam ise komşuların masaya
+            oturduğu bir yer.
+          </p>
+          <p>
+            Mutfağımız geniş: sabah kahvaltı, öğlen ızgara ve makarna, akşam
+            bonfile ve kokteyl. Hepsi tek bir şeyde birleşiyor — acele etmeden,
+            doğru pişmiş yemek.
+          </p>
+
+          <dl class="ozellikler">
+            <div class="ozellik">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6M4.9 4.9l4.2 4.2M2 12h6M4.9 19.1l4.2-4.2M12 22v-6M19.1 19.1l-4.2-4.2M22 12h-6M19.1 4.9l-4.2 4.2"/></svg>
+              <div><b>Gölgeli açık alan</b><span>Yazın serin, asma altı teras</span></div>
+            </div>
+            <div class="ozellik">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              <div><b>Sabah 08:30'dan gece yarısına</b><span>Kahvaltıdan kokteyle</span></div>
+            </div>
+            <div class="ozellik">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l8-8 8 8M5 9v11h14V9"/><path d="M9 20v-6h6v6"/></svg>
+              <div><b>Efes'e 3 dakika</b><span>Selçuk merkez, meydanın yanı</span></div>
+            </div>
+            <div class="ozellik">
+              <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h14l-1 9a6 6 0 0 1-12 0L5 3z"/><path d="M12 18v3M8 21h8"/></svg>
+              <div><b>Kokteyl ve kahve</b><span>Gün boyu bar servisi</span></div>
+            </div>
+          </dl>
+        </div>
+
+        <div class="mekan__media reveal">
+          <figure class="mekan__img mekan__img--ana">
+            <img src="assets/img/mekan-ic.webp"
+                 alt="Pirinç aplikler, koyu ahşap masalar ve kadeh dizilerinin olduğu sıcak bistro iç mekânı"
+                 width="760" height="950" loading="lazy" decoding="async" />
+          </figure>
+          <figure class="mekan__img mekan__img--yan">
+            <img src="assets/img/mekan-masa.webp"
+                 alt="Akşam ışığında, küçük kristal masa lambasıyla aydınlanan hazırlanmış masa"
+                 width="700" height="520" loading="lazy" decoding="async" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         QR MENÜ TANITIMI
+         ========================================================== -->
+    <section class="section qr-bolum" id="qr">
+      <div class="wrap qr-grid">
+        <div class="reveal">
+          <p class="eyebrow">Masada QR, cepte menü</p>
+          <hr class="rule" />
+          <h2 class="section__title">Menü her zaman güncel</h2>
+          <p class="section__lead">
+            Masadaki karta telefonunuzun kamerasını tuttuğunuzda menü anında
+            açılır. Basılı menü beklemeye, sayfa çevirmeye gerek yok —
+            fiyatlar değiştiğinde site güncellenir, karttaki kod aynı kalır.
+          </p>
+
+          <div class="qr-adimlar">
+            <div class="qr-adim">
+              <span class="qr-adim__no" aria-hidden="true">1</span>
+              <p><b>Kamerayı açın.</b> Ayrı bir uygulama indirmenize gerek yok.</p>
+            </div>
+            <div class="qr-adim">
+              <span class="qr-adim__no" aria-hidden="true">2</span>
+              <p><b>Karta doğrultun.</b> Ekranda çıkan bağlantıya dokunun.</p>
+            </div>
+            <div class="qr-adim">
+              <span class="qr-adim__no" aria-hidden="true">3</span>
+              <p><b>Menü açılır.</b> Kategoriler arasında tek dokunuşla gezin.</p>
+            </div>
+          </div>
+
+          <a href="menu.html" class="btn btn--pirinc btn--lg">Menüyü şimdi aç</a>
+        </div>
+
+        <div class="reveal">
+          <div class="qr-kart">
+            <div class="qr-kart__ust">
+              <b>MEKAN EFES</b>
+              <span>Bistro &amp; Cafe</span>
+            </div>
+            <img src="assets/qr/menu-qr.png"
+                 alt="Menü sayfasına yönlendiren QR kod"
+                 width="190" height="190" loading="lazy" decoding="async" />
+            <p class="qr-kart__alt">Menü için kameranızı QR koda tutun</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         REZERVASYON
+         ========================================================== -->
+    <section class="section rezervasyon" id="rezervasyon">
+      <div class="wrap">
+        <div class="rez-kart reveal">
+          <div class="rez-kart__text">
+            <p class="eyebrow eyebrow--koyu">Rezervasyon</p>
+            <hr class="rule" />
+            <h2 class="section__title">Masanızı ayıralım</h2>
+            <p>
+              Hafta sonu akşamları ve tur sezonunda teras hızlı doluyor.
+              WhatsApp'tan yazın; kaç kişi, hangi saat ve teras mı iç mekân mı
+              tercih ettiğinizi belirtin — kısa sürede dönüş yapalım.
+            </p>
+          </div>
+
+          <div class="rez-kart__yan">
+            <!-- DEĞİŞTİR: WhatsApp numarasi -->
+            <a class="btn btn--pirinc btn--lg btn--blok"
+               href="https://wa.me/905058962582?text=Merhaba%2C%20rezervasyon%20yapt%C4%B1rmak%20istiyorum.%20Tarih%3A%20...%20Saat%3A%20...%20Ki%C5%9Fi%3A%20..."
+               target="_blank" rel="noopener">WhatsApp'tan yazın</a>
+            <a class="btn btn--cizgi btn--blok" href="tel:+902328922001">Telefonla arayın</a>
+
+            <p class="rez-bilgi">
+              <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              Her gün 08:30 – 00:00
+            </p>
+            <p class="rez-bilgi">
+              <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Atatürk Mah. 1055. Sk. No:4, Selçuk
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         İLETİŞİM
+         ========================================================== -->
+    <section class="section iletisim" id="iletisim">
+      <div class="wrap">
+        <header class="section__head reveal">
+          <p class="eyebrow">İletişim</p>
+          <hr class="rule" />
+          <h2 class="section__title">Bizi bulun</h2>
+        </header>
+
+        <div class="iletisim__grid">
+          <div class="iletisim__bilgi reveal">
+            <div class="bilgi-blok">
+              <h3>Adres</h3>
+              <p>
+                Atatürk Mahallesi, 1055. Sokak No: 4<br />
+                35920 Selçuk / İzmir
+              </p>
+              <a class="ok-link" target="_blank" rel="noopener"
+                 href="https://www.google.com/maps/search/?api=1&query=Mekan+Efes+Restaurant+Sel%C3%A7uk">
+                Yol tarifi al
+              </a>
+            </div>
+
+            <div class="bilgi-blok">
+              <h3>Çalışma Saatleri</h3>
+              <table class="saatler" id="saatler">
+                <caption class="sr-only">Haftalık çalışma saatleri</caption>
+                <tbody>
+                  <tr data-gun="1"><th scope="row">Pazartesi</th><td>08:30 – 00:00</td></tr>
+                  <tr data-gun="2"><th scope="row">Salı</th><td>08:30 – 00:00</td></tr>
+                  <tr data-gun="3"><th scope="row">Çarşamba</th><td>08:30 – 00:00</td></tr>
+                  <tr data-gun="4"><th scope="row">Perşembe</th><td>08:30 – 00:00</td></tr>
+                  <tr data-gun="5"><th scope="row">Cuma</th><td>08:30 – 00:00</td></tr>
+                  <tr data-gun="6"><th scope="row">Cumartesi</th><td>08:30 – 00:00</td></tr>
+                  <tr data-gun="0"><th scope="row">Pazar</th><td>08:30 – 00:00</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="bilgi-blok">
+              <h3>Bize ulaşın</h3>
+              <p class="iletisim__satirlar">
+                <a href="tel:+905058962582">0505 896 25 82</a>
+                <a href="tel:+902328922001">0232 892 20 01</a>
+                <a href="https://www.instagram.com/mekanefes/" target="_blank" rel="noopener">@mekanefes</a>
+              </p>
+              <p class="bilgi-not">
+                WhatsApp üzerinden yazdığınızda mesajınız Meta Platforms tarafından
+                işlenir. Ayrıntı için <a href="kvkk-aydinlatma-metni.html">aydınlatma metnimize</a> bakın.
+              </p>
+            </div>
+          </div>
+
+          <!-- ------------------------------------------------------
+               Google Haritalar — ONAYA BAĞLI YÜKLENİR.
+               Harita gomulusu Google'a IP adresi gonderir ve cerez
+               yerlestirebilir; bu yuzden ziyaretci onay vermeden
+               iframe sayfaya eklenmez (js/main.js).
+               ------------------------------------------------------ -->
+          <div class="harita reveal">
+            <div class="harita-onay" id="harita-onay">
+              <svg viewBox="0 0 24 24" width="34" height="34" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/>
+              </svg>
+              <h3>Harita yüklenmedi</h3>
+              <p>
+                Haritayı görüntülemek Google Maps'e bağlanır; IP adresiniz Google'a
+                iletilir ve cihazınıza çerez yerleştirilebilir. Onayınız olmadan
+                yüklemiyoruz.
+              </p>
+              <button type="button" class="btn btn--birincil" id="harita-yukle">Haritayı yükle</button>
+              <p class="harita-onay__alt">
+                <a href="https://www.google.com/maps/search/?api=1&query=Mekan+Efes+Restaurant+Sel%C3%A7uk"
+                   target="_blank" rel="noopener">Yeni sekmede Google Haritalar'da aç</a>
+                &nbsp;·&nbsp;
+                <a href="cerez-politikasi.html">Çerez politikası</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================
+       ALT BİLGİ
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="wrap footer__grid">
+      <div>
+        <a href="#ust" class="logo" style="color: var(--pirinc)">
+          <svg class="logo__amblem" viewBox="0 0 100 100" aria-hidden="true"
+               fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 86 V50 A34 34 0 0 1 84 50 V86" stroke-width="3.2" opacity="0.55"/>
+            <path d="M11 86 H89" stroke-width="3.2" opacity="0.55"/>
+            <path d="M26 70 V44 L38 61 L50 44 V70" stroke-width="4.2"/>
+            <path d="M60 44 V70 M60 44 H75 M60 57 H71 M60 70 H75" stroke-width="4.2"/>
+          </svg>
+          <span class="logo__yazi">
+            <span class="logo__ad">MEKAN EFES</span>
+            <span class="logo__alt">Bistro &amp; Cafe</span>
+          </span>
+        </a>
+        <p class="footer__not">Selçuk'un merkezinde, Efes'in gölgesinde.</p>
+      </div>
+
+      <nav aria-label="Alt menü">
+        <h4 class="footer__h">Sayfalar</h4>
+        <ul class="footer__links">
+          <li><a href="menu.html">Menü</a></li>
+          <li><a href="#imza">İmza Lezzetler</a></li>
+          <li><a href="#mekan">Mekân</a></li>
+          <li><a href="#rezervasyon">Rezervasyon</a></li>
+          <li><a href="#iletisim">İletişim</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-label="Yasal bilgiler">
+        <h4 class="footer__h">Yasal</h4>
+        <ul class="footer__links">
+          <li><a href="kvkk-aydinlatma-metni.html">KVKK Aydınlatma Metni</a></li>
+          <li><a href="gizlilik-politikasi.html">Gizlilik Politikası</a></li>
+          <li><a href="cerez-politikasi.html">Çerez Politikası</a></li>
+          <li><a href="kullanim-kosullari.html">Kullanım Koşulları</a></li>
+        </ul>
+      </nav>
+
+      <!-- =========================================================
+           İŞLETME KÜNYESİ
+           6563 sayili E-Ticaret Kanunu md.3 ve 5651 sayili Kanun
+           kapsaminda tanitici bilgilerin sitede bulunmasi gerekir.
+           DEĞİŞTİR: ticaret unvani, vergi ve MERSIS bilgileri.
+           ========================================================= -->
+      <div class="kunye">
+        <h4 class="footer__h">Künye</h4>
+        <dl>
+          <dt>Ticaret unvanı</dt><dd>[Ticaret Unvanı] — DEĞİŞTİR</dd>
+          <dt>Adres</dt><dd>Atatürk Mah. 1055. Sk. No:4, Selçuk / İzmir</dd>
+          <dt>Telefon</dt><dd><a href="tel:+905058962582">0505 896 25 82</a></dd>
+          <dt>Vergi dairesi / no</dt><dd>[Vergi Dairesi] / [No] — DEĞİŞTİR</dd>
+          <dt>MERSİS no</dt><dd>[MERSİS No] — DEĞİŞTİR</dd>
+        </dl>
+      </div>
+    </div>
+
+    <div class="wrap footer__alt">
+      <p>&copy; <span id="yil">2026</span> Mekan Efes. Tüm hakları saklıdır.</p>
+      <p>
+        Görseller: <a href="https://unsplash.com/license" target="_blank" rel="noopener">Unsplash Lisansı</a> ·
+        Yazı tipleri: Cormorant Garamond &amp; Jost (SIL OFL 1.1)
+      </p>
+    </div>
+  </footer>
+
+  <!-- Sabit WhatsApp düğmesi — DEĞİŞTİR: numara -->
+  <a class="wa" id="wa"
+     href="https://wa.me/905058962582?text=Merhaba%2C%20rezervasyon%20i%C3%A7in%20yaz%C4%B1yorum."
+     target="_blank" rel="noopener" aria-label="WhatsApp ile rezervasyon">
+    <span class="wa__halka" aria-hidden="true"></span>
+    <svg class="wa__icon" viewBox="0 0 24 24" width="26" height="26" aria-hidden="true" fill="currentColor">
+      <path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.65-2.05-.17-.3-.02-.46.13-.6.14-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.53-.07-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.53.07-.8.38-.28.3-1.05 1.02-1.05 2.5s1.07 2.9 1.22 3.1c.15.2 2.1 3.2 5.1 4.49.71.3 1.27.49 1.7.63.72.23 1.37.2 1.88.12.58-.09 1.75-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35z"/>
+      <path d="M12.04 2C6.6 2 2.18 6.42 2.18 11.86c0 1.74.46 3.44 1.32 4.94L2 22l5.33-1.4a9.8 9.8 0 0 0 4.7 1.2h.01c5.44 0 9.86-4.42 9.86-9.86A9.8 9.8 0 0 0 19 4.86 9.8 9.8 0 0 0 12.04 2zm0 18.05h-.01a8.2 8.2 0 0 1-4.17-1.14l-.3-.18-3.1.81.83-3.02-.2-.31a8.13 8.13 0 0 1-1.25-4.35c0-4.52 3.68-8.2 8.2-8.2a8.15 8.15 0 0 1 8.2 8.2c0 4.52-3.68 8.2-8.2 8.2z"/>
+    </svg>
+    <span class="wa__etiket">Rezervasyon</span>
+  </a>
+
+  <!-- Konsept rozeti — YAYINA ALIRKEN BU SATIRI SİLİN -->
+  <a class="konsept" href="kullanim-kosullari.html">Konsept çalışma — resmî site değildir</a>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
