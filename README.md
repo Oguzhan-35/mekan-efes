@@ -2,8 +2,7 @@
 
 Selçuk / İzmir'deki **Mekan Efes Restaurant** için hazırlanmış tanıtım sitesi,
 QR menü sistemi ve logo tasarımı. Saf HTML + CSS + JavaScript; framework,
-build adımı veya bağımlılık yok. GitHub'a atıp Vercel'e bağladığınız anda
-yayına girer.
+build adımı veya bağımlılık yok.
 
 > ### ⚠️ Bu bir konsept çalışmadır
 > Site, restorana **sunulmak üzere** hazırlanmış bir tasarım önerisidir ve
